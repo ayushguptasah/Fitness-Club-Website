@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Club</title>
+</head>
+<link rel="stylesheet" href="css/Style.css">
+<style>
+    /* CSS Reset */
+    body {
+        background: url("Images/img1.jpg");
+        background-size: 1540px 795px;
+    }
+
+    .left {
+        display: inline-block;
+        border: 2px solid red;
+        position: absolute;
+        left: 30px;
+        top: 20px;
+    }
+
+    .mid {
+        display: block;
+        width: 40%;
+        margin: 20px auto;
+        border: 2px solid green;
+    }
+
+    .right {
+        position: absolute;
+        right: 30px;
+        top: 20px;
+        display: inline-block;
+        border: 2px solid red;
+    }
+    .navbar{
+        display: inline-block;
+    }
+    .navbar li{
+        display: inline-block;
+        font-size: 20px;
+    }
+    .navbar li a{
+        color: rgb(211, 59, 59);
+        text-decoration: none;
+        padding: 34px 23px;
+    }
+    .navbar li a:hover, .navbar li a.active{
+        text-decoration: underline;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <!-- Left box fox logo -->
+        <div class="left">
+I am Left
+        </div>
+        <!-- Mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <!-- Right box for a buttons -->
+        <div class="right">
+            I am Right
+        </div>
+    </header>
+</body>
+
+</html>
