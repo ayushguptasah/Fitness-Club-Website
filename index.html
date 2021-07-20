@@ -7,10 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fitness Club</title>
 </head>
+<link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Uchen&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/Style.css">
 <style>
     /* CSS Reset */
     body {
+        font-family: 'Balsamiq Sans', cursive;
+        font-family: 'Uchen', serif;
         background: url("Images/img1.jpg");
         background-size: 1540px 795px;
     }
@@ -23,9 +26,18 @@
         top: 20px;
     }
 
+    .left img {
+        width: 80px;
+
+    }
+
+    .left div {
+        text-align: center;
+    }
+
     .mid {
         display: block;
-        width: 40%;
+        width: 44%;
         margin: 20px auto;
         border: 2px solid green;
     }
@@ -37,20 +49,40 @@
         display: inline-block;
         border: 2px solid red;
     }
-    .navbar{
+
+    .navbar {
         display: inline-block;
     }
-    .navbar li{
+
+    .navbar li {
         display: inline-block;
         font-size: 20px;
     }
-    .navbar li a{
+
+    .navbar li a {
         color: rgb(211, 59, 59);
         text-decoration: none;
         padding: 34px 23px;
     }
-    .navbar li a:hover, .navbar li a.active{
+
+    .navbar li a:hover,
+    .navbar li a.active {
         text-decoration: underline;
+    }
+
+    .btn {
+        margin: 0px 9px;
+        color: white;
+        background-color: black;
+        padding: 4px 14px;
+        border: 2px solid gray;
+        border-radius: 10px;
+        font-size: 15px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: rgb(102, 102, 224);
     }
 </style>
 
@@ -58,7 +90,8 @@
     <header class="header">
         <!-- Left box fox logo -->
         <div class="left">
-I am Left
+            <img src="Images/logo.jpg" alt="">
+            <div>Fitness Club</div>
         </div>
         <!-- Mid box for navbar -->
         <div class="mid">
@@ -71,12 +104,10 @@ I am Left
         </div>
         <!-- Right box for a buttons -->
         <div class="right">
-            I am Right
+            <button class="btn">Call us Now</button>
+            <button class="btn">Email us</button>
         </div>
-        
-        <div class="right">
-            I am Right
-        </div>
+
     </header>
 </body>
 
