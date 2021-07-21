@@ -7,27 +7,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fitness Club</title>
 </head>
-<link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Uchen&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/Style.css">
 <style>
     /* CSS Reset */
     body {
-        font-family: 'Balsamiq Sans', cursive;
-        font-family: 'Uchen', serif;
+        font-family: 'Oswald', sans-serif;
         background: url("Images/img1.jpg");
         background-size: 1540px 795px;
     }
 
     .left {
         display: inline-block;
-        border: 2px solid red;
+        /* border: 2px solid red; */
         position: absolute;
-        left: 30px;
+        left: 60px;
         top: 20px;
     }
 
     .left img {
-        width: 80px;
+        width: 100px;
 
     }
 
@@ -37,17 +36,18 @@
 
     .mid {
         display: block;
-        width: 44%;
+        width: 40%;
         margin: 20px auto;
-        border: 2px solid green;
+        border: 2px solid black;
+        border-radius: 40px;
     }
 
     .right {
         position: absolute;
         right: 30px;
-        top: 20px;
+        top: 34px;
         display: inline-block;
-        border: 2px solid red;
+        /* border: 2px solid red; */
     }
 
     .navbar {
@@ -60,7 +60,7 @@
     }
 
     .navbar li a {
-        color: rgb(211, 59, 59);
+        color: black;
         text-decoration: none;
         padding: 34px 23px;
     }
@@ -68,9 +68,11 @@
     .navbar li a:hover,
     .navbar li a.active {
         text-decoration: underline;
+        color: rgb(90, 90, 235);
     }
 
     .btn {
+        font-family: 'Oswald', sans-serif;
         margin: 0px 9px;
         color: white;
         background-color: black;
@@ -84,19 +86,47 @@
     .btn:hover {
         background-color: rgb(102, 102, 224);
     }
+
+    .Container {
+        border: 2px solid;
+        margin: 95px 95px;
+        padding: 75px;
+        width: 30%;
+        border-radius: 25px;
+    }
+
+    .form-group input {
+        font-family: 'Oswald', sans-serif;
+        text-align: center;
+        display: block;
+        width: 300px;
+        padding: 5px;
+        border: 2px solid black;
+        margin: 3px auto;
+        font-size: 20px;
+        border-radius: 10px;
+    }
+    .Container h1{
+        text-align: center;
+
+    }
+    .Container button{
+        display: block;
+        width: 20%;
+        margin: auto;
+    }
 </style>
 
 <body>
     <header class="header">
         <!-- Left box fox logo -->
         <div class="left">
-            <img src="Images/logo.jpg" alt="">
-            <div>Fitness Club</div>
+            <img src="Images/logo1.jpg" alt="error">
         </div>
         <!-- Mid box for navbar -->
         <div class="mid">
             <ul class="navbar">
-                <li><a href="#">Home</a></li>
+                <li><a href="#" class="active">Home</a></li>
                 <li><a href="#">About Us</a></li>
                 <li><a href="#">Fitness Calculator</a></li>
                 <li><a href="#">Contact Us</a></li>
@@ -109,6 +139,27 @@
         </div>
 
     </header>
+    <div class="Container">
+        <h1>Join the best GYM in your City</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Locality">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your No.">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
 </body>
 
 </html>
